@@ -8,7 +8,6 @@ export default defineConfig({
     base: "/dc-business-blog-card/",
     outDir: "../docs",
     emptyOutDir: true,
-    copyPublicDir: false,
   },
   root: "src",
 });
