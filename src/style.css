@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #f2f5f9;
+}
+
+.card {
+  @apply mx-auto overflow-clip rounded-xl bg-white;
+  width: 418px;
+  margin-block-start: 125px;
+}
+.card__hero {
+  position: relative;
+  img {
+    aspect-ratio: 1.58/1;
+    object-fit: cover;
+    object-position: top center;
+  }
+}
+.card__hero::after {
+  position: absolute;
+  content: "";
+  height: 52px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/public/img/white-overlay.svg") no-repeat;
+  background-size: cover;
+}
+.card__content {
+  @apply px-8 pb-6 pt-4;
+}
+.card__title {
+  @apply text-2xl;
+  letter-spacing: -1.1px;
+  line-height: 1.5;
+}
+.card__description {
+  @apply mt-3;
+  color: #677489;
+  letter-spacing: 0.1px;
+}
+.card__footer {
+  @apply flex items-center gap-x-3 px-8 py-6;
+  border-top: 1px solid #f2f5f9;
+  line-height: 1.4;
+}
+.card__avatar {
+  @apply overflow-hidden rounded-full;
+  border: 4px solid #f2f5f9;
+}
+.card__career {
+  @apply text-xs;
+  color: #677489;
+}
