@@ -1,13 +1,8 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/",
   server: {
-    open: "/index.html",
+    open: true,
   },
-  build: {
-    base: "/dc-business-blog-card/",
-    outDir: "../docs",
-    emptyOutDir: true,
-  },
-  root: "src",
 });
