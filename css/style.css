@@ -172,9 +172,9 @@ textarea {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -185,7 +185,6 @@ textarea {
    ========================================================================== */
 
 @media print {
-
   *,
   *::before,
   *::after {
@@ -337,7 +336,7 @@ body {
   border-radius: 0.75rem;
   background-color: #fff;
   width: 418px;
-  margin-block-start: 125px;
+  margin-block: 125px;
 }
 
 .card__hero {
@@ -373,7 +372,7 @@ body {
 }
 
 .card__description {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   color: #677489;
   letter-spacing: 0.1px;
 }
@@ -381,7 +380,7 @@ body {
 .card__footer {
   display: flex;
   align-items: center;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   padding: 1.5rem 2rem;
   border-top: 1px solid #f2f5f9;
   line-height: 1.4;
