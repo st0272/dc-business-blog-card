@@ -343,7 +343,7 @@ body {
   position: relative;
 
   img {
-    aspect-ratio: 1.58/1;
+    aspect-ratio: 1.56/1;
     object-fit: cover;
     object-position: top center;
   }
@@ -366,8 +366,7 @@ body {
 
 .card__title {
   font-size: 1.5rem;
-  /* line-height: 2rem; */
-  letter-spacing: -1.1px;
+  letter-spacing: -1.15px;
   line-height: 1.5;
 }
 
